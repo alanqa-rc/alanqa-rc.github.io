@@ -1,37 +1,95 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Alanqa 主页</title>
+	</head>
+	<body>
 
-You can use the [editor on GitHub](https://github.com/alanqa-rc/alanqa-rc.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+			![Logo of Alanqa](.//icon.png "Logo of Alanqa")
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+		<font size="15">
+		Alanqa 主页
+		</font>
 
-### Markdown
+		<!---主页列表--->
+		<dl>
+			<dt>
+			常用主页
+			</dt>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alanqa-rc/alanqa-rc.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+				<!---Firefox--->
+				<input
+				type="image"
+				src=".//websiteicons/firefox.png"
+				width="128"
+				height="128"
+				onclick="window.open('https://i.firefoxchina.cn')"
+				/>
+				<!---Bing--->
+				<input
+				type='image'
+				src=".//websiteicons/bing.png"
+				width="128"
+				height="128"
+				onclick="window.open('https://cn.bing.com')"
+				/>
+				<!---Baidu--->
+				<input
+				type='image'
+				src=".//websiteicons/baidu.png"
+				width="128"
+				height="128"
+				onclick="window.open('https://www.baidu.com')"
+				/>
+				<!---msn--->
+				<input
+				type='image'
+				src=".//websiteicons/msn.png"
+				width="128"
+				height="128"
+				onclick="window.open('https://www.msn.cn')"
+				/>
+		</dl>
+		<table
+		border="1"
+		style="border-collapse:collapse;"
+		>
+			<caption>
+			关于此网站的信息列表
+			</caption>
+			<tr>
+				<th>
+				类名
+				</th>
+				<th>
+				提供者
+				</th>
+			</tr>
+			<tr>
+				<td>
+				作者
+				</td>
+				<td>
+				Alanqa
+				</td>
+			</tr>
+			<tr>
+				<td>
+				服务器
+				</td>
+				<td>
+				Github仓库
+				</td>
+			</tr>
+			<tr>
+				<td>
+				赞助
+				</td>
+				<td>
+				无
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
