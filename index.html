@@ -9,7 +9,7 @@
 				margin: 0px auto;
 				text-align: center;
 				background-color: #eee;
-				background-image: url(.//th.jpg);
+				background-image: url(.//webimages/background.jpg);
 			}
 			#wrap{  /*固定宽度，并居中显示*/
 				width: 780px;
@@ -33,7 +33,6 @@
 				overflow: hidden;  /*隐藏超出区域的内容*/
 			}
 			#search-input{  /*定义搜索栏样式*/
-				width:500px;
 				height:100%;
 				float:middle;
 				overflow:hidden;
@@ -41,19 +40,19 @@
 				font-weight:bold;
 				font-size:20px;
 				opacity: 0.75;
-				border-radius: 55px;
 				border:hidden;
 				text-align:center;
 			}
 			#search-check{  /*定义搜索栏内部样式*/
-				float:left;
+				float:middle;
 				overflow:hidden;
 				background-color: #FFFFFF
 				font-weight:bold;
 				font-size:20px;
-				border-radius: 25px;
+				border-radius: 0px 25px 25px 0px;
 				border:hidden;
 				text-align:center;
+				opacity:0.75;
 			}
 			#pageicons{  /*定义主页样式*/
 				float: middle;
@@ -88,7 +87,7 @@
 	<body>
 	<div id='topicon'>
 			<img
-			src=".//topimage.png"
+			src=".//webimages/topimage.png"
 			width="257"
 			height="90"
 			title="Logo of Alanqa"
@@ -98,10 +97,12 @@
 	<br/>
 	<br/>
 	<br/>
+	<br/>
+	<br/>
 	<div id='search-input'>
-	<form action="https://www.baidu.com/s" method="GET" target="_blank">
-            <input type="text" placeholder="Search...." name="wd" id="search-check" autocomplete="off" autofocus="">
-            <button name="submit" id="search-check">搜索</button>
+	<form action="https://cn.bing.com/search" method="GET" target="_blank">
+            <input type="text" placeholder="Search...." name="q" id="search-input" autocomplete="off" autofocus="" size="120">
+            <button id="search-check"><img src=".//webicons/search.png" width="20" height="20"/></button>
     </form>
 	</div>
 	
@@ -116,34 +117,43 @@
 			<input
 				type="image"
 				src=".//websiteicons/firefox.png"
-				width="128"
-				height="128"
 				onclick="window.open('https://i.firefoxchina.cn')"
+				width='64'
+				height='64'
 			/>
 				<!---Bing--->
 			<input
 				type='image'
 				src=".//websiteicons/bing.png"
-				width="128"
-				height="128"
+				width='64'
+				height='64'
 				onclick="window.open('https://cn.bing.com')"
 			/>
 				<!---Baidu--->
 			<input
 				type='image'
 				src=".//websiteicons/baidu.png"
-				width="128"
-				height="128"
+				width='64'
+				height='64'
 				onclick="window.open('https://www.baidu.com')"
 			/>
 				<!---msn--->
 			<input
 				type='image'
 				src=".//websiteicons/msn.png"
-				width="128"
-				height="128"
+				width='64'
+				height='64'
 				onclick="window.open('https://www.msn.cn')"
 			/>
+				<!---google--->
+			<input
+				type='image'
+				src='.//websiteicons/google.png'
+				width='64'
+				height='64'
+				onclick="window.open('https://www.google.cn/')"
+			/>
+				
 		</div>
 	</div>
 	<br/>
@@ -152,7 +162,7 @@
 		<a href='https://www.bilibili.com' target='_blank'>哔哩哔哩</a>
 		<a href='https://www.github.com' target='_blank'>Github</a>
 		<br/>
-		<a href='https://www.ipaddress.com' target='_blank'>IPAddreas</a>
+		<a href='https://www.ipaddress.com' target='_blank'>IPAddress</a>
 		<a href='https://www.qq.com' target='_blank'>腾讯网</a>
 		<br/>
 		<a href='https://www.amazon.cn' target='_blank'>亚马逊</a>
