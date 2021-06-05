@@ -10,17 +10,25 @@
 		</style>
 
 		
-		<script type="text/javascript" src="function.js"></script>
+		<script
+		type="text/javascript"
+		src="function.js"></script>
 		<script type='text/javascript'>
 		function getDate(){
                 //获取当前时间
                 var date = new Date();
                 //格式化为本地时间格式
                 var date1 = date.toLocaleString();
+				var hour=date.getHours();
+				var mins=date.getMinutes();
+				if (mins<10){
+					var mins="0"+mins
+				}
+				var showtime=hour+':'+mins;
                 //获取div
                 var div1 = document.getElementById("timeShow");
                 //将时间写入div
-                div1.innerHTML = date1;
+                div1.innerHTML = showtime;
 				
             }
             //使用定时器每秒向div写入当前时间
@@ -29,7 +37,7 @@
 		
 	</head>
 	<body>
-	
+	<div id='mainModern'>
 	<div id="timeShow"></div>
 	<div id='topicon'>
 			<img
@@ -47,7 +55,7 @@
 	<br/>
 	<div id='search-div' onmouseleave='schidden(sin)' onmouseover='scshow(sin)'>
 	<form action="https://cn.bing.com/search" method="GET" target="_blank">
-            <input type="text" placeholder="Search...." name="q" id="sin" autocomplete="off" autofocus="" size="60"/>
+            <input type="text" placeholder="Search...." name="q" value id="sin" class='searchin' autocomplete="off" autofocus=""/>
             <button id="sbu"><img src=".//webicons/search.png" width="35" height="35"/></button>
     </form>
 	</div>
@@ -55,9 +63,10 @@
 	<br/>
 	<br/>
 	<br/>
+	<br/>
 	<div id='homepage' onmouseover='hpshow(pageicons)' onmouseleave='hphidden(pageicons)'>
-		<font color=#eee>
-			常用主页
+		<font id='hpwz'>
+			<br/>
 		</font>
 		<!---主页列表--->
 		<div id='pageicons'>
@@ -106,6 +115,12 @@
 	</div>
 	<br/>
 	
+	
+	
+	
+	<br/>
+	<br/>
+	<br/>
 	<div id="smallSC">
 		<a href='https://www.bilibili.com' target='_blank'>哔哩哔哩</a>
 		<a href='https://www.github.com' target='_blank'>Github</a>
@@ -117,6 +132,8 @@
 		<a href='https://github.com/alanqa-rc/alanqa-rc.github.io' target='_blank'>alanqa的github</a>
 	</div>
 	
+	
+	</div>
 	
 	</body>
 </html>
