@@ -1,0 +1,108 @@
+		    body{  /*定义网页窗口属性，清除页边距，定义居中显示*/
+				padding: 0px;
+				margin: 0px auto;
+				text-align: center;
+				background-color: #eee;
+				/*background-image: url(.//webimages/background.jpg);*/
+				background:url(https://api.dujin.org/bing/1920.php);
+			}
+			#wrap{  /*固定宽度，并居中显示*/
+				width: 780px;
+				margin: 0px auto;
+			}
+			#header{
+				width: 100%;  /*与父元素同宽*/
+				height: 74px;  /*定义固定高度*/
+				background-color: #A94E38;  /*定义背景颜色*/
+				color: #F0DFDB;  /*定义文字颜色*/
+			}
+			#main{
+				width: 100%;
+				height: 400px;
+			}
+			#timeShow{
+                width: 200px;
+                height: 20px;
+				float: middle;
+				font-weight:bold;
+				font-size:20px;
+				color:white;
+                border: 0px solid gray;  /*如果不加实线无法显示边框*/
+            }
+			#topicon{  /*定义图标样式*/
+				width: 300px;
+				height: 100%;
+				float: right;  /*浮动显示，可以实现并列分布*/
+				/*background-color: #eee;*/
+				overflow: hidden;  /*隐藏超出区域的内容*/
+			}
+			#search-div{  /*定义栏样式*/
+				height:100%;
+				float:left;
+				overflow:hidden;
+				background-color: #eee;
+				font-weight:bold;
+				font-size:20px;
+				opacity: 0.75;
+				border:hidden;
+				text-align:center;
+				border-radius: 0px 15px 15px 0px;
+				outline:none;
+			}
+			#sin{  /*定义搜索框样式*/
+				height:100%;
+				float:left;
+				overflow:hidden;
+				background-color: #FFFFFF
+				font-weight:bold;
+				font-size:33px;
+				opacity: 0.75;
+				border:hidden;
+				text-align:center;
+				outline:none;
+			}
+			#sbu{  /*定义搜索按钮样式*/
+				float:left;
+				overflow:hidden;
+				background-color: #FFFFFF
+				font-weight:bold;
+				border-radius: 0px 25px 25px 0px;
+				border:hidden;
+				text-align:center;
+				obackground:rgba(255,255,255,0.15);
+			}
+			#homepage{  /*定义:主页div*/
+				float:middle;
+				overflow:hidden;
+				background-color: #eee;
+				background:rgba(255,255,255,0.15);
+				border-radius: 55px;
+			}
+			#pageicons{  /*定义:主页icons*/
+				float: middle;
+				overflow: hidden;
+				background-color: #eee;
+				text-align: center;
+				font-weight: bold;
+				border-radius:25px;
+				/*opacity: 0.5;*/
+				background:rgba(255,255,255,0.25);
+
+			}
+			#smallSC{  /*定义小超链接集群样式*/
+				width:500px;
+				height:200%;
+				float:middle;
+				overflow:hidden;
+				background-color: #eee
+				font-weight:bold;
+				background:rgba(255,255,255,0.5);
+				border-radius: 25px;
+				text-align:center;
+			}
+			#footer{  /*定义页脚样式*/
+				background-color: #7082C2;
+				width: 100%;
+				height: 50px;
+				clear: both;  /*清除左右浮动的元素*/
+			}

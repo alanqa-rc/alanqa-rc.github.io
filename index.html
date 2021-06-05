@@ -1,91 +1,36 @@
 <!doctype html>
 <html>
 	<head>
+		<meta name="full-screen" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
 		<title>Alanqa 导航页</title>
 		<style type="text/css">
-		    body{  /*定义网页窗口属性，清除页边距，定义居中显示*/
-				padding: 0px;
-				margin: 0px auto;
-				text-align: center;
-				background-color: #eee;
-				/*background-image: url(.//webimages/background.jpg);*/
-				background:url(https://api.dujin.org/bing/1920.php);
-			}
-			#wrap{  /*固定宽度，并居中显示*/
-				width: 780px;
-				margin: 0px auto;
-			}
-			#header{
-				width: 100%;  /*与父元素同宽*/
-				height: 74px;  /*定义固定高度*/
-				background-color: #A94E38;  /*定义背景颜色*/
-				color: #F0DFDB;  /*定义文字颜色*/
-			}
-			#main{
-				width: 100%;
-				height: 400px;
-			}
-			#topicon{  /*定义图标样式*/
-				width: 300px;
-				height: 100%;
-				float: right;  /*浮动显示，可以实现并列分布*/
-				/*background-color: #eee;*/
-				overflow: hidden;  /*隐藏超出区域的内容*/
-			}
-			#search-input{  /*定义搜索栏样式*/
-				height:100%;
-				float:middle;
-				overflow:hidden;
-				background-color: #FFFFFF
-				font-weight:bold;
-				font-size:20px;
-				opacity: 0.75;
-				border:hidden;
-				text-align:center;
-			}
-			#search-check{  /*定义搜索栏内部样式*/
-				float:middle;
-				overflow:hidden;
-				background-color: #FFFFFF
-				font-weight:bold;
-				font-size:20px;
-				border-radius: 0px 25px 25px 0px;
-				border:hidden;
-				text-align:center;
-				opacity:0.75;
-			}
-			#pageicons{  /*定义主页样式*/
-				float: middle;
-				overflow: hidden;
-				background-color: #eee;
-				text-align: center;
-				font-weight: bold;
-				border-radius:25px;
-				/*opacity: 0.5;*/
-				background:rgba(255,255,255,0.25);
+			@import url(arts.css);
+		</style>
 
-			}
-			#smallSC{  /*定义小超链接集群样式*/
-				width:500px;
-				height:200%;
-				float:middle;
-				overflow:hidden;
-				background-color: #eee
-				font-weight:bold;
-				background:rgba(255,255,255,0.5);
-				border-radius: 25px;
-				text-align:center;
-			}
-			#footer{  /*定义页脚样式*/
-				background-color: #7082C2;
-				width: 100%;
-				height: 50px;
-				clear: both;  /*清除左右浮动的元素*/
-			}
-			</style>
+		
+		<script type="text/javascript" src="function.js"></script>
+		<script type='text/javascript'>
+		function getDate(){
+                //获取当前时间
+                var date = new Date();
+                //格式化为本地时间格式
+                var date1 = date.toLocaleString();
+                //获取div
+                var div1 = document.getElementById("timeShow");
+                //将时间写入div
+                div1.innerHTML = date1;
+				
+            }
+            //使用定时器每秒向div写入当前时间
+            setInterval("getDate()",1000);
+		</script>
+		
 	</head>
 	<body>
+	
+	<div id="timeShow"></div>
 	<div id='topicon'>
 			<img
 			src=".//webimages/topimage.png"
@@ -100,16 +45,18 @@
 	<br/>
 	<br/>
 	<br/>
-	<div id='search-input'>
+	<div id='search-div' onmouseleave='schidden(sin)' onmouseover='scshow(sin)'>
 	<form action="https://cn.bing.com/search" method="GET" target="_blank">
-            <input type="text" placeholder="Search...." name="q" id="search-input" autocomplete="off" autofocus="" size="120">
-            <button id="search-check"><img src=".//webicons/search.png" width="20" height="20"/></button>
+            <input type="text" placeholder="Search...." name="q" id="sin" autocomplete="off" autofocus="" size="60"/>
+            <button id="sbu"><img src=".//webicons/search.png" width="35" height="35"/></button>
     </form>
 	</div>
 	
 	<br/>
-	<div id='homepage'>
-		<font size="30" color=#eee face="仿宋">
+	<br/>
+	<br/>
+	<div id='homepage' onmouseover='hpshow(pageicons)' onmouseleave='hphidden(pageicons)'>
+		<font color=#eee>
 			常用主页
 		</font>
 		<!---主页列表--->
