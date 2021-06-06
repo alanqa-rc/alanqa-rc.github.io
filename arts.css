@@ -30,13 +30,6 @@
 				margin:auto;
 				perspective:1200px;
             }
-			#topicon{  /*定义图标样式*/
-				width: 300px;
-				height: 100%;
-				float: right;  /*浮动显示，可以实现并列分布*/
-				overflow: hidden;  /*隐藏超出区域的内容*/
-				
-			}
 			#sdiv{  /*定义栏样式*/
 				float:middle;
 				overflow:hidden;
@@ -55,7 +48,7 @@
 			#sin{  /*定义搜索框样式*/
 				height:100%;
 				float:middle;
-				overflow:hidden;
+				overflow:show;
 				background-color: #FFFFFF
 				font-weight:bold;
 				font-size:33px;
@@ -100,24 +93,13 @@
 				background:rgba(255,255,255,0.25);
 
 			}
-			#smallSC{  /*定义小超链接集群样式*/
-				width:500px;
-				//float:middle;
-				overflow:hidden;
-				background-color: #eee;
-				font-weight:bold;
-				background:rgba(255,255,255,0.5);
-				border-radius: 25px;
-				text-align:center;
-				font-size:125%;
-				box-shadow: 0px 0px 50px black;
-				position:fixed; bottom:0; left:0;
-			}
 			#footer{  /*定义页脚样式*/
-				background-color: #7082C2;
 				width: 100%;
-				height: 50px;
 				clear: both;  /*清除左右浮动的元素*/
-				text-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
-				filter: blur(5px);
+				box-shadow:0px -1em 6px black;
+				filter: blur(0px);
+				position:fixed;bottom:0;
+				background-color:#eee;
+				border-radius:25px 25px 0px 0px;
+				opacity:0.75;
 			}
