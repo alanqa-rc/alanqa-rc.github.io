@@ -9,9 +9,13 @@
 
 			function scshow(x){
 				x.style.display = 'block';
+				x.style.left='38%';
+				x.style.right='38%';
 			}
 			function schidden(x){
 				x.style.display = 'none';
+				x.style.left='45%';
+				x.style.right='45%';
 			}
 			window.onload=function(){
 				pageicons.style.display = 'none';
