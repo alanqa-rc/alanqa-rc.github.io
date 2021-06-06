@@ -9,18 +9,21 @@
 
 			function scshow(x){
 				x.style.display = 'block';
-				x.style.left='38%';
-				x.style.right='38%';
+				sdiv.style.left='38%';
+				sdiv.style.right='38%';
+				sdiv.style.background='rgba(255,255,255,0)';
 			}
 			function schidden(x){
 				x.style.display = 'none';
-				x.style.left='45%';
-				x.style.right='45%';
+				sdiv.style.left='48%';
+				sdiv.style.right='48%';
+				sdiv.style.background='rgba(255,255,255,1)';
 			}
 			window.onload=function(){
 				pageicons.style.display = 'none';
 				hpwz.style.display = 'block';
-				sin.style.display = 'none';
+				schidden(sin);
+				stobing();
 				console.log("感谢使用阿兰卡导航页！")
 				console.log("作者QQ:30087370")
 				console.log("2021 6 5 15:45")
