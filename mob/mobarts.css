@@ -1,0 +1,52 @@
+			body{  /*定义网页窗口属性，清除页边距，定义居中显示*/
+				padding: 0px;
+				margin: 0px auto;
+				text-align: center;
+				background-color: #eee;
+				font-size:62.5%;
+				background:url(https://api.dujin.org/bing/1920.php);
+				background-repeat: no-repeat;
+			}
+			#sdivmob{  /*定义mob栏样式*/
+				float:middle;
+				overflow:hidden;
+				background-color: #eee;
+				font-weight:bold;
+				font-size:20px;
+				opacity: 0.75;
+				border:hidden;
+				text-align:center;
+				border-radius: 1em;
+				outline:none;
+				box-shadow: 0px 10px 50px black;
+				position:absolute;left:0;right:0;top:8em;
+				margin:0 auto;
+			}
+			#sinmob{  /*定义mob搜索框样式*/
+				height:100%;width:100%;
+				float:middle;
+				overflow:show;
+				background-color: #FFFFFF;
+				font-size:33px;
+				opacity: 0.75;
+				border:hidden;
+				text-align:center;
+				outline:none;
+				position:absolute;left:0;right:0;top:8em;
+				
+			}
+			#timeShow{           /*time*/
+                width: 20em;
+                height: 4em;
+				float: middle;
+				font-weight:bold;
+				font-size:40px;
+				color:white;
+                border: 0px solid gray;
+				text-shadow: 5px 0px 15px black,-5px 0px 15px white;
+				/*position: absolute;
+				left: 0; right: 0;
+				top: 2em;*/
+				margin:auto;
+				perspective:1200px;
+            }
