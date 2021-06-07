@@ -1,0 +1,55 @@
+﻿<html>
+	<head>
+		<meta name="full-screen" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
+		<title>Alanqa起始页</title>
+		<style type="text/css">
+			@import url(../arts.css);
+		</style>
+
+
+		<script type="text/javascript" src="../function.js"></script>
+		<script type='text/javascript'>
+		function getDate(){
+                //获取当前时间
+                var date = new Date();
+                //格式化为本地时间格式
+                var date1 = date.toLocaleString();
+				var hour=date.getHours();
+				var mins=date.getMinutes();
+				if (mins<10){
+					var mins="0"+mins
+				}
+				var showtime=hour+':'+mins;
+                //获取div
+                var div1 = document.getElementById("timeShow");
+                //将时间写入div
+                div1.innerHTML = showtime;
+				
+            }
+            //使用定时器每秒向div写入当前时间
+            setInterval("getDate()",1000);
+		</script>
+	<body>
+		<br/>
+		<br/>
+		<br/>
+		<div id="timeShow"></div>
+		<div id='sdivmob'>
+		<form action="https://cn.bing.com/search" method="GET" target="_blank" id='sform'>
+            <input type="text" placeholder="Search...." name="q" value id="sinmob" class='searchin' autocomplete="off" autofocus=""/>
+			<br/>
+			<br/>
+		</form>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>	
