@@ -36,6 +36,9 @@
 	</head>
 	<body>
 	<div id='mainModern'>
+	<br/>
+	<br/>
+	<br/>
 	<div id="timeShow"></div>
 	<br/>
 	<div id='br'>
@@ -47,10 +50,9 @@
 	<br/>
 	<br/>
 	</div>
-	<div id='sdiv'  onmouseover='scshow(sin)' onmouseleave='schidden(sin)'>
+	<div id='sdiv'  onmouseover='scshow()' onmouseleave='schidden()'>
 	<form action="https://cn.bing.com/search" method="GET" target="_blank" id='sform'>
-            <input type="text" placeholder="Search...." name="q" value id="sin" class='searchin' autocomplete="off" autofocus=""/>
-            <button id="sbu"><img src=".//webicons/search.png" width="35" height="35"/></button>
+            <input type="text" placeholder="Search...." name="q" value id="sin" class='searchin' autocomplete="off" autofocus="" oninput="largesin" onchange="scshow(this)"/>
     </form>
 	</div>
 	
