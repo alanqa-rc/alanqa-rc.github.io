@@ -35,37 +35,27 @@
 				overflow:hidden;
 				background-color: #eee;
 				font-weight:bold;
-				font-size:20px;
+				font-size:2em;
 				opacity: 0.75;
 				border:hidden;
 				text-align:center;
 				border-radius: 1em;
 				outline:none;
 				box-shadow: 0px 10px 50px black;
-				position:absolute;left:38%;right:38%;top:8em;
+				position:absolute;top:8em;
 				margin:0 auto;
 			}
 			#sin{  /*定义搜索框样式*/
+				width:100%;
 				height:100%;
-				float:middle;
-				overflow:show;
+				float:left;
+				overflow:hidden;
 				background-color: #FFFFFF;
 				font-size:33px;
 				opacity: 0.75;
 				border:hidden;
 				text-align:center;
 				outline:none;
-				
-			}
-			#sbu{  /*定义搜索按钮样式*/
-				float:middle;
-				overflow:hidden;
-				background-color: #FFFFFF;
-				border-radius: 25px;
-				border:hidden;
-				text-align:center;
-				background:rgba(255,255,255,0.65);
-				
 				
 			}
 			#pageicons{  /*定义:主页icons*/
